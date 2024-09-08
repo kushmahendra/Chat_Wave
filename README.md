@@ -18,12 +18,19 @@ WebSockets: Real-time, full-duplex communication for chat functionality.
 # ✨ Features
 
 🔐 User Authentication: Secure login and registration using JWT for authentication.
+
 💬 Real-Time Messaging: Chat with other users in real-time using WebSockets powered by Django Channels.
+
 🌍 Multi-Language Support: Translate chat messages instantly with LibreTranslate.
+
 📝 Group and Direct Chats: Supports both group chats and one-on-one direct messaging.
+
 👤 User Profiles: View and manage user profiles with personalized settings.
+
 🔄 Persistent Sessions: Sessions persist between page reloads, ensuring a seamless experience.
+
 📱 Responsive Design: Adapts to mobile, tablet, and desktop devices for a smooth user experience.
+
 
 # 📂 Project Structure
 
