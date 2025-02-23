@@ -9,11 +9,13 @@ A full-featured Chat Web Application built using React.js ⚛️, Tailwind CSS �
 
 **JWT (JSON Web Tokens):** Securely manage user authentication and authorization.
 
+WebSockets: Real-time, full-duplex communication for chat functionality.
+
 Python Django Channels: Enables real-time communication using WebSockets for a responsive chat experience.
 
 LibreTranslate: Provides multi-language translation capabilities for chat messages.
 
-WebSockets: Real-time, full-duplex communication for chat functionality.
+
 
 # ✨ Features
 
@@ -112,5 +114,4 @@ Feel free to reach out if you have any questions, suggestions, or feedback!
 
 **LinkedIn:** www.linkedin.com/in/mahendra-kushwaha-333569259
 
-# 🙌 Acknowledgments
-Thanks to the open-source community for providing incredible tools and resources that make development fun and efficient!
+
