@@ -1,5 +1,5 @@
-// tailwind.config.js
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -21,26 +21,21 @@ module.exports = {
         "7xl": "26px",
         inherit: "inherit",
       },
-
-
-
-
     },
   },
   plugins: [
-   function ({ addUtilities }) {
-  const newUtilities = {
-    ".no-scrollbar::-webkit-scrollbar": {
-      display: "block",
-      width: "8px", // Wrap the value in quotes
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "block",
+          width: "8px", // Wrap the value in quotes
+        },
+        ".no-scrollbar": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "thin",
+        },
+      };
+      addUtilities(newUtilities);
     },
-    ".no-scrollbar": {
-      "-ms-overflow-style": "none",
-      "scrollbar-width": "thin",
-    },
-  };
-  addUtilities(newUtilities);
-}
-,
   ],
-}
+};
