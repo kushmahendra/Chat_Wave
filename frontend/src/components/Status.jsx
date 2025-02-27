@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import  Zuck from "zuck.js";
+import * as Zuck from "zuck.js";
 import "zuck.js/css";
 import "zuck.js/skins/snapgram";
 import { MdClose } from "react-icons/md";
