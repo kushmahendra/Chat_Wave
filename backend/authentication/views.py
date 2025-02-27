@@ -17,7 +17,7 @@ class HomeView(APIView):
             if hasattr(user, "thumbnail") and user.thumbnail:
                 return Response(
                     {
-                        "avatar_url": f"http://localhost:8000{user.thumbnail.url}",
+                        "avatar_url": f"https://chatwave-backend-7uzl.onrender.com{user.thumbnail.url}",
                         "username": user.username,
                         "message":"You have the image buddy",
                         'user':user.username
@@ -29,7 +29,7 @@ class HomeView(APIView):
                         "username": user.username,
                         "email": user.email,
                         "message": "You dont have image buddy",
-                        "avatar_url": "http://localhost:8000/media/avatars/blank.png",
+                        "avatar_url": "https://chatwave-backend-7uzl.onrender.com/media/avatars/blank.png",
                         'user':user.username
                     }
                 )

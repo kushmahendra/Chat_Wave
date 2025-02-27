@@ -161,6 +161,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5173",  # Example: React development server
     "http://localhost",
+    "https://chatwave-backend-7uzl.onrender.com"
 ]
 
 
@@ -212,7 +213,7 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-DOMAIN = 'localhost:5173'
+DOMAIN = 'https://wavechat-jk1c.onrender.com'
 SITE_NAME = 'ChatWave'
 
 DJOSER = {
