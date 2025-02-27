@@ -161,8 +161,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5173",  # Example: React development server
     "http://localhost",
-    "https://chatwave-backend-7uzl.onrender.com"
-    "https://chat-wave-ge7r.onrender.com/"
+    "https://chatwave-backend-7uzl.onrender.com",
+    "https://chat-wave-ge7r.onrender.com",
 ]
 
 
