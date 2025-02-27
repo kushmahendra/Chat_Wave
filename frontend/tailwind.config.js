@@ -1,5 +1,4 @@
 // tailwind.config.js
- // export default {
 module.exports = {
   content: [
     "./index.html",
