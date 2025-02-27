@@ -1,5 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
-import * as Zuck from "zuck.js";
+import("zuck.js").then((module) => {
+  const Zuck = module.default || module.Zuck || module;
+  const stories = new Zuck("stories");
+});
 import "zuck.js/css";
 import "zuck.js/skins/snapgram";
 import { MdClose } from "react-icons/md";
