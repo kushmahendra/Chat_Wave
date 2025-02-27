@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
       try {
         const token = localStorage.getItem("access_token");
         if (token) {
-          const response = await axios.get("http://localhost:8000", {
+          const response = await axios.get("https://chatwave-backend-7uzl.onrender.com", {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
       const access_token = localStorage.getItem("access_token");
       if (token) {
         const response = await axios.post(
-          "http://localhost:8000/logout/",
+          "https://chatwave-backend-7uzl.onrender.com/logout/",
           {
             refresh_token: token,
           },
@@ -89,7 +89,7 @@ export const AuthProvider = ({ children }) => {
   const handleTokenRefresh = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/token/refresh/",
+        "https://chatwave-backend-7uzl.onrender.com/token/refresh/",
         {
           refresh: localStorage.getItem("refresh_token"),
         },

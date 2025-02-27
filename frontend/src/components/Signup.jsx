@@ -34,7 +34,7 @@ const Signup = () => {
       try {
         setLoading(true);
         const { data } = await axios.post(
-          "http://localhost:8000/api-auth/convert-token/",
+          "https://chatwave-backend-7uzl.onrender.com/api-auth/convert-token/",
           userPayload,
           {
             headers: {
@@ -77,7 +77,7 @@ const Signup = () => {
         email: email,
       };
 
-      const response = await fetch("http://localhost:8000/signup/", {
+      const response = await fetch("https://chatwave-backend-7uzl.onrender.com/signup/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -94,7 +94,7 @@ const Signup = () => {
           };
 
           const { data } = await axios.post(
-            "http://localhost:8000/token/",
+            "https://chatwave-backend-7uzl.onrender.com/token/",
             user,
             {
               headers: {
